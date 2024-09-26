@@ -9,10 +9,24 @@
     <header>
         <h1 class="tittles"> Contacto </h1>
         <div id="buttons-links">
-            <a href="index.html" class="button-link"> Inicio </a>
-            <a href="servicio.html" class="button-link"> Servicios </a>
+            <a href="index.html" class="button-link borders-black" > Inicio </a>
+            <a href="servicio.html" class="button-link borders-black"> Servicios </a>
         </div>    
     </header>
+
+    <div id="form">
+        <form class="borders-black">
+            <div> 
+                <h2> Formulario </h2>
+            </div>
+            <div class="container-inputs-form">
+                <input class="input-form borders-black" type="text" name="Nombre" placeholder="Nombre" id="">
+                <input class="input-form borders-black" type="text" name="Apellido" placeholder="Apellido" id="">
+                <input class="input-form borders-black" type="email" name="Correo" placeholder="Correo Electronico" id="">
+                <input class="input-form borders-black" type="text" name="numero" placeholder="Telefono" id="">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
 
@@ -23,25 +37,53 @@
         text-align: center;
     }
 
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
     #buttons-links{
         display: flex;
         justify-content: center;
     }
 
-    .button-link{
+    .borders-black{
         border: 1.5px solid black;
-        border-radius: 50px;
+        border-radius: 10px;
+    }
+
+    .button-link{
         padding: .5%;
         margin: 10px;
         width: 5%;
         text-align: center;
-        text-decoration: none;
-        color: black;
     }
 
     .button-link:hover{
         background-color: black;
         color: white;
+    }
+
+    form{
+        border: 2px;
+        box-shadow: 2px 2px 2px;
+        padding: 2%;
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .container-inputs-form{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .input-form{
+        padding: 1.5%;
+        margin: 2% auto;
+        width: 40%;
     }
 
 </style>
